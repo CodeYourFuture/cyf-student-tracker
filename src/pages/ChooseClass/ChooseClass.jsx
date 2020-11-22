@@ -11,7 +11,7 @@ const ChooseClass = () => {
     history.push("/students-tracker");
   }
   return(
-    <div>
+    <div className="container">
       <div className="welcome-msg">
         <h3>Welcome back <span className="userName">{dummyData[0].userName} </span>!</h3>
         <p>Please choose which class would you like to access:</p>
