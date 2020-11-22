@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './chooseclass.scss'
 import dummyData from './dummyData.json'
 import { useHistory } from "react-router-dom";
-//import classes from '*.module.css';
+
 
 const ChooseClass = () => {
  
@@ -12,19 +12,19 @@ const ChooseClass = () => {
   }
   return(
     <div>
-      <div>
-        <h3>Welcome back <span>{dummyData[0].userName} </span>!</h3>
+      <div className="welcome-msg">
+        <h3>Welcome back <span className="userName">{dummyData[0].userName} </span>!</h3>
         <p>Please choose which class would you like to access:</p>
       </div>
-      <div>
+      <div className="btnDiv">
         <button type="button" onClick={handleClick}>
           {dummyData[0].classes[0]}
         </button>
         <button type="button" onClick={handleClick}>
-          {dummyData[1].classes[1]}
+          {dummyData[0].classes[1]}
         </button>
         <button type="button" onClick={handleClick}>
-          {dummyData[2].classes[2]}
+          {dummyData[0].classes[2]}
         </button>
       </div>
     </div>
