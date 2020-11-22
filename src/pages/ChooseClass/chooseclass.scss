@@ -1,0 +1,7 @@
+@import '../../assets/sass/main.scss';
+button{
+  width: 15rem;
+  height: 10rem;
+  @include boxShadow;
+ 
+}
